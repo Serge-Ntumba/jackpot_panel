@@ -1,0 +1,105 @@
+@import "../sassStyles/variables";
+@import "../sassStyles/mixins";
+
+.panel {
+  height: 100vh;
+  width: 100%;
+  @media screen and (min-width: $medium) {
+    @include background($bgPath);
+  }
+
+  @media screen and (max-width: $medium) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &Top {
+    display: flex;
+    width: 100%;
+    gap: 8%;
+    justify-content: space-around;
+    padding-top: 40px;
+    @media screen and (max-width: $large) {
+      gap: 0%;
+      justify-content: space-evenly;
+    }
+    @media screen and (max-width: $medium) {
+      padding-top: 0px;
+      flex-direction: column;
+      order: 2;
+    }
+    &Gold {
+      margin-left: -70px;
+      @media screen and (max-width: $medium) {
+        @include background($bgPath);
+        margin-bottom: $margin-20;
+        margin-top: $margin-20;
+        margin-left: 0px;
+      }
+    }
+    &Platinum {
+      @media screen and (max-width: $medium) {
+        @include background($bgPath);
+      }
+    }
+  }
+  &Middle {
+    margin-top: -290px;
+    @media screen and (max-width: $large) {
+      margin-top: -250px;
+    }
+    @media screen and (max-width: $medium) {
+      margin-top: 0px;
+      order: 1;
+
+      @include background($bgPath);
+    }
+  }
+  &Bottom {
+    margin-top: -180px;
+    display: flex;
+    justify-content: space-around;
+    @media screen and (max-width: $large) {
+      justify-content: space-evenly;
+    }
+    @media screen and (max-width: $medium) {
+      flex-direction: column;
+      order: 3;
+      margin-top: 0px;
+    }
+
+    &Silver {
+      @media screen and (max-width: $large) {
+      }
+      @media screen and (max-width: $medium) {
+        order: 1;
+
+        @include background($bgPath);
+        margin-bottom: $margin-20;
+        margin-top: $margin-20;
+      }
+    }
+    &Iron {
+      margin-top: 120px;
+      padding-bottom: 0px;
+      align-self: flex-end;
+      @media screen and (max-width: $medium) {
+        margin-top: 0px;
+        align-self: center;
+        order: 3;
+        width: 100%;
+        height: 100%;
+
+        @include background($bgPath);
+      }
+    }
+    &Bronze {
+      @media screen and (max-width: $medium) {
+        order: 2;
+
+        @include background($bgPath);
+        margin-bottom: $margin-20;
+      }
+    }
+  }
+}

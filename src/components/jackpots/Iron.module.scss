@@ -1,0 +1,96 @@
+@import "../../sassStyles/variables";
+.iron {
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  .container {
+    position: relative;
+    .bgImg {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      @media screen and (max-width: $medium) {
+        max-width: 280px;
+      }
+    }
+    .jackpot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+      &Name {
+        max-width: 300px;
+        height: auto;
+        @media screen and (max-width: $miniLarge) {
+          max-width: 250px;
+        }
+
+        @media screen and (max-width: $medium) {
+          max-width: 200px;
+        }
+      }
+      &Score {
+        margin-top: -18px;
+        position: relative;
+        z-index: -30;
+        @media screen and (max-width: $miniLarge) {
+          margin-top: -10px;
+        }
+        &Img {
+          max-height: 100px;
+          height: auto;
+          @media screen and (max-width: $miniLarge) {
+            max-width: 380px;
+          }
+          @media screen and (max-width: $medium) {
+            max-width: 380px;
+          }
+          @media screen and (max-width: $small) {
+            max-width: 330px;
+          }
+          @media screen and (max-width: $smaller) {
+            max-width: 280px;
+          }
+        }
+
+        &Num {
+          position: absolute;
+          top: 15px;
+          white-space: nowrap;
+
+          font-size: 78px;
+          color: rgb(255, 255, 255);
+          text-transform: uppercase;
+          line-height: 0.854;
+          // text-align: center;
+          text-shadow: 0px 0px 7.74px rgba(255, 228, 0, 0.47);
+          -moz-transform: matrix(0.79143640198586, 0, 0, 0.7914363959956, 0, 0);
+          -webkit-transform: matrix(
+            0.79143640198586,
+            0,
+            0,
+            0.7914363959956,
+            0,
+            0
+          );
+          -ms-transform: matrix(0.79143640198586, 0, 0, 0.7914363959956, 0, 0);
+
+          @media screen and (max-width: $miniLarge) {
+            font-size: 65px;
+          }
+
+          @media screen and (max-width: $medium) {
+            top: 10px;
+          }
+
+          @media screen and (max-width: $small) {
+            font-size: 55px;
+          }
+          @media screen and (max-width: $smaller) {
+            font-size: 48px;
+          }
+        }
+      }
+    }
+  }
+}

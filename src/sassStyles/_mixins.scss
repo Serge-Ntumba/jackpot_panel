@@ -1,0 +1,25 @@
+@mixin background(
+  $imgPath,
+  $position: center center,
+  $repeat: no-repeat,
+  $size: cover
+) {
+  background: {
+    image: url($imgPath);
+    position: $position;
+    repeat: $repeat;
+    size: $size;
+  }
+}
+
+@mixin text() {
+  position: absolute;
+  top: 15px;
+  left: -12px;
+  white-space: nowrap;
+
+  font-size: 78px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 0.854;
+}

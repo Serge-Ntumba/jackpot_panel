@@ -1,0 +1,11 @@
+@import "./sassStyles/variables";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: $FiraSansCondensed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,90 @@
+@import "../../sassStyles/variables";
+@import "../../sassStyles/mixins";
+
+.gold {
+  text-align: center;
+  .container {
+    position: relative;
+    .bgImg {
+      max-width: 350px;
+      width: 100%;
+      height: auto;
+
+      @media screen and (max-width: $medium) {
+        max-width: 280px;
+      }
+    }
+    .jackpot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      &Name {
+        max-width: 400px;
+        height: auto;
+        @media screen and (max-width: $miniLarge) {
+          max-width: 350px;
+        }
+
+        @media screen and (max-width: $medium) {
+          max-width: 280px;
+        }
+        @media screen and (max-width: $smaller) {
+          max-width: 200px;
+        }
+      }
+      &Score {
+        margin-top: -18px;
+        position: relative;
+        z-index: -30;
+        @media screen and (max-width: $miniLarge) {
+          margin-top: -10px;
+        }
+        &Img {
+          max-height: 100px;
+          height: auto;
+          @media screen and (max-width: $miniLarge) {
+            max-width: 430px;
+          }
+          @media screen and (max-width: $small) {
+            max-width: 370px;
+          }
+          @media screen and (max-width: $smaller) {
+            max-width: 300px;
+          }
+        }
+
+        &Num {
+          @include text();
+
+          text-shadow: 0px 0px 7.74px rgba(255, 228, 0, 0.47);
+          -moz-transform: matrix(0.79143640198586, 0, 0, 0.7914363959956, 0, 0);
+          -webkit-transform: matrix(
+            0.79143640198586,
+            0,
+            0,
+            0.7914363959956,
+            0,
+            0
+          );
+          -ms-transform: matrix(0.79143640198586, 0, 0, 0.7914363959956, 0, 0);
+
+          @media screen and (max-width: $miniLarge) {
+            font-size: 65px;
+          }
+
+          @media screen and (max-width: $medium) {
+          }
+
+          @media screen and (max-width: $small) {
+            font-size: 55px;
+            top: 10px;
+          }
+          @media screen and (max-width: $smaller) {
+            font-size: 48px;
+          }
+        }
+      }
+    }
+  }
+}

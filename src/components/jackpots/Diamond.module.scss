@@ -1,0 +1,125 @@
+@import "../../sassStyles/variables";
+
+.diamond {
+  //   color: blue;
+  text-align: center;
+  .container {
+    position: relative;
+    .bgImg {
+      max-width: 700px;
+      width: 100%;
+      height: auto;
+
+      //   background-color: blue;
+      @media screen and (max-width: $medium) {
+        max-width: 500px;
+      }
+    }
+    .jackpot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+      @media screen and (max-width: $medium) {
+        width: 100%;
+      }
+
+      &Name {
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+        // margin-bottom: -20px;
+        @media screen and (max-width: $medium) {
+          max-width: 700px;
+        }
+        @media screen and (max-width: $small) {
+          max-width: 600px;
+        }
+        @media screen and (max-width: $smaller) {
+          max-width: 400px;
+        }
+      }
+      &Score {
+        margin-top: -18px;
+        position: relative;
+        z-index: -30;
+        @media screen and (max-width: $miniLarge) {
+          margin-top: -10px;
+        }
+        &Img {
+          max-width: 630px;
+          width: 100%;
+          max-height: 120px;
+          height: auto;
+          @media screen and (max-width: $miniLarge) {
+            max-width: 530px;
+          }
+
+          @media screen and (max-width: $medium) {
+            max-width: 430px;
+          }
+          // @media screen and (max-width: $small) {
+          //   max-width: 390px;
+          // }
+          @media screen and (max-width: $smaller) {
+            max-width: 320px;
+          }
+        }
+
+        &Num {
+          position: absolute;
+          top: 25px;
+          left: 29%;
+          white-space: nowrap;
+
+          font-size: 45px;
+          color: rgb(255, 255, 255);
+          text-transform: uppercase;
+          line-height: 1.424;
+          text-align: center;
+          text-shadow: 0px 0px 8.9px rgba(255, 0, 150, 0.73);
+          -moz-transform: matrix(
+            1.67499767616055,
+            0,
+            0,
+            1.67499767616055,
+            0,
+            0
+          );
+          -webkit-transform: matrix(
+            1.67499767616055,
+            0,
+            0,
+            1.67499767616055,
+            0,
+            0
+          );
+          -ms-transform: matrix(1.67499767616055, 0, 0, 1.67499767616055, 0, 0);
+          @media screen and (max-width: $large) {
+            left: 26%;
+            // font-size: 40px;
+          }
+          @media screen and (max-width: $miniLarge) {
+            // left: 30%;
+            font-size: 38px;
+          }
+          @media screen and (max-width: $medium) {
+            font-size: 30px;
+            left: 37%;
+          }
+
+          @media screen and (max-width: $small) {
+            // font-size: 24px;
+            left: 33%;
+          }
+
+          @media screen and (max-width: $smaller) {
+            font-size: 22px;
+            left: 29%;
+            top: 17px;
+          }
+        }
+      }
+    }
+  }
+}
