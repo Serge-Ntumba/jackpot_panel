@@ -1,24 +1,56 @@
 @import "../../sassStyles/variables";
+@import "../../sassStyles/mixins";
 
 .platinum {
   text-align: center;
+  // @include background($lightPath);
   @media screen and (max-width: $medium) {
   }
   .container {
     position: relative;
-    .bgImg {
-      max-width: 350px;
-      width: 100%;
-      height: auto;
-      @media screen and (max-width: $medium) {
-        max-width: 280px;
+    .backgrounds {
+      .bgImg {
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+        @media screen and (max-width: $medium) {
+          max-width: 280px;
+        }
+      }
+      .light {
+        position: absolute;
+        top: -60px;
+        left: -30%;
+        // background-color: aqua;
+        max-width: 150%;
+        // width: 150%;
+        height: auto;
+        @media screen and (max-width: $medium) {
+          // top: -80px;
+          left: 25%;
+          max-width: 50%;
+        }
+
+        @media screen and (max-width: $small) {
+          top: -20px;
+        }
+        @media screen and (max-width: 555px) {
+          top: 10px;
+          // max-width: 80%;
+          // left: 10%;
+        }
+        @media screen and (max-width: $smaller) {
+          max-width: 80%;
+          left: 10%;
+          top: 0;
+        }
       }
     }
     .jackpot {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -60%);
+      transform: translate(-50%, -55%);
       &Name {
         max-width: 700px;
         height: auto;

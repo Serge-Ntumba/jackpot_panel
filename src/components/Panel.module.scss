@@ -18,7 +18,7 @@
     width: 100%;
     gap: 8%;
     justify-content: space-around;
-    padding-top: 40px;
+    padding-top: 30px;
     @media screen and (max-width: $large) {
       gap: 0%;
       justify-content: space-evenly;
@@ -30,6 +30,7 @@
     }
     &Gold {
       margin-left: -70px;
+
       @media screen and (max-width: $medium) {
         @include background($bgPath);
         margin-bottom: $margin-20;
@@ -44,10 +45,10 @@
     }
   }
   &Middle {
-    margin-top: -290px;
-    @media screen and (max-width: $large) {
-      margin-top: -250px;
-    }
+    margin-top: -140px;
+    // @media screen and (max-width: $large) {
+    //   margin-top: -250px;
+    // }
     @media screen and (max-width: $medium) {
       margin-top: 0px;
       order: 1;
@@ -56,7 +57,7 @@
     }
   }
   &Bottom {
-    margin-top: -180px;
+    margin-top: -130px;
     display: flex;
     justify-content: space-around;
     @media screen and (max-width: $large) {
@@ -69,6 +70,8 @@
     }
 
     &Silver {
+      // @include background($lightPath);
+
       @media screen and (max-width: $large) {
       }
       @media screen and (max-width: $medium) {
@@ -94,6 +97,8 @@
       }
     }
     &Bronze {
+      // @include background($lightPath);
+
       @media screen and (max-width: $medium) {
         order: 2;
 

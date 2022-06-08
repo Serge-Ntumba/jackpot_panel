@@ -2,16 +2,53 @@
 @import "../../sassStyles/mixins";
 .bronze {
   text-align: center;
+
+  // background-size: contain;
+
   .container {
     position: relative;
-    .bgImg {
-      max-width: 350px;
-      width: 100%;
-      height: auto;
-      @media screen and (max-width: $medium) {
-        max-width: 280px;
+
+    .backgrounds {
+      .bgImg {
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+        @media screen and (max-width: $medium) {
+          max-width: 280px;
+        }
+      }
+      .light {
+        position: absolute;
+        top: -100px;
+        left: -20%;
+        // background-color: aqua;
+        max-width: 150%;
+        // width: 150%;
+        height: auto;
+        @media screen and (max-width: $medium) {
+          top: -80px;
+          left: 25%;
+          max-width: 50%;
+        }
+        @media screen and (max-width: 555px) {
+          top: -100px;
+          max-width: 100%;
+          left: 0%;
+        }
+        @media screen and (max-width: $smaller) {
+          top: -50px;
+        }
       }
     }
+
+    // .bgImg {
+    //   max-width: 350px;
+    //   width: 100%;
+    //   height: auto;
+    //   @media screen and (max-width: $medium) {
+    //     max-width: 280px;
+    //   }
+    // }
     .jackpot {
       position: absolute;
       top: 50%;

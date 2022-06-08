@@ -1,16 +1,37 @@
 import React from "react";
 import style from "./Platinum.module.scss";
+import { motion } from "framer-motion";
 
 const Platinum = () => {
   return (
     <div className={style.platinum}>
       <div className={style.container}>
-        <img
+        {/* <img
           className={style.bgImg}
-          //   src={require("../../assets/images/bg-diamond.png")}
           src={require("../../assets/images/bg-platinum.png")}
           alt="diamondBg"
-        />
+        /> */}
+
+        <div className={style.backgrounds}>
+          <img
+            className={style.bgImg}
+            src={require("../../assets/images/bg-platinum.png")}
+            alt="diamondBg"
+          />
+          <motion.img
+            className={style.light}
+            //   src={require("../../assets/images/bg-diamond.png")}
+            src={require("../../assets/images/light.png")}
+            alt="light"
+            initial={{ scale: 0.9 }}
+            animate={{ scale: 1.3 }}
+            transition={{
+              repeatType: "reverse",
+              duration: 2,
+              repeat: Infinity,
+            }}
+          />
+        </div>
         <div className={style.jackpot}>
           <img
             className={style.jackpotName}
