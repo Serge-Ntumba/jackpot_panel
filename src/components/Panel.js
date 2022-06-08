@@ -12,10 +12,9 @@ import JackpotFullPanel from "./jackpots/JackpotFullPanel";
 const Panel = () => {
   return (
     <>
-      {/* <CoinAnimation /> */}
       <div className={style.panel}>
-        {/* <JackpotFullPanel /> */}
-        <div className={style.panelTop}>
+        <JackpotFullPanel />
+        {/* <div className={style.panelTop}>
           <div className={style.panelTopGold}>
             <Gold />
           </div>
@@ -39,7 +38,7 @@ const Panel = () => {
           <div className={style.panelBottomBronze}>
             <Bronze />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

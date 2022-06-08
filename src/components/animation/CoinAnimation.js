@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import style from "./CoinAnimation.module.scss";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Images from "./Images";
 
 const CoinAnimation = () => {
@@ -29,12 +29,31 @@ const CoinAnimation = () => {
   ];
   return (
     <div className={style.container}>
-      <div>
+      {/* <div>
         {animate &&
           animatedCoins.map((coin) => <Images src={coin.src} alt={coin.alt} />)}
-      </div>
+      </div> */}
+      <AnimatePresence>
+        <motion.img
+          animate={{ x: [0, 460, 600], y: [0, -200, 600] }}
+          transition={{
+            duration: 2,
+            ease: "easeOut",
+          }}
+          src={require("../../assets/images/coin-1.png")}
+          alt={"alt"}
+          width={150}
+          height={150}
+        />
+      </AnimatePresence>
     </div>
   );
 };
 
 export default CoinAnimation;
+
+// "linear"
+// "easeIn", "easeOut", "easeInOut"
+// "circIn", "circOut", "circInOut"
+// "backIn", "backOut", "backInOut"
+// "anticipate"
