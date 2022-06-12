@@ -45,7 +45,7 @@ const Diamond = () => {
             src={require("../../assets/images/diamond-title.png")}
             alt="jackpotName"
             initial={{ scale: 1 }}
-            animate={{ scale: 1.2 }}
+            animate={{ scale: [1.2, 1.5, 1] }}
             transition={{
               repeatType: "reverse",
               duration: 1,
@@ -61,11 +61,14 @@ const Diamond = () => {
             <motion.div
               className={style.jackpotScoreNum}
               initial={{ opacity: 0.1 }}
-              animate={{ opacity: 1 }}
+              animate={{
+                opacity: 1,
+              }}
               transition={{
                 repeatType: "reverse",
-                duration: 1,
-                repeat: 4,
+                duration: 2,
+                repeat: 2,
+                opacity: { duration: 1, repeat: 2 },
               }}
             >
               493 034 982.12
