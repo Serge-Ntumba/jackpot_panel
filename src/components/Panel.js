@@ -6,7 +6,7 @@ import Silver from "./jackpots/Silver";
 import Bronze from "./jackpots/Bronze";
 import Iron from "./jackpots/Iron";
 import style from "./Panel.module.scss";
-import CoinAnimation from "./animation/CoinAnimation";
+
 import JackpotFullPanel from "./jackpots/JackpotFullPanel";
 
 const Panel = () => {

@@ -1,12 +1,13 @@
 import React from "react";
-import CoinAnimation from "../animation/CoinAnimation";
-import Bronze from "./Bronze";
+import ParticlesComponent from "../animation/ParticlesComponent";
 import Diamond from "./Diamond";
-import Gold from "./Gold";
-import Iron from "./Iron";
 import style from "./JackpotFullPanel.module.scss";
-import Platinum from "./Platinum";
-import Silver from "./Silver";
+// import Bronze from "./Bronze";
+// import Gold from "./Gold";
+// import Iron from "./Iron";
+
+// import Platinum from "./Platinum";
+// import Silver from "./Silver";
 
 const JackpotFullPanel = () => {
   return (
@@ -19,7 +20,7 @@ const JackpotFullPanel = () => {
       {/* <Silver /> */}
       {/* <Iron /> */}
       <div className={style.containerAnimation}>
-        <CoinAnimation />
+        <ParticlesComponent />
       </div>
     </div>
   );
