@@ -44,11 +44,11 @@ const Diamond = () => {
             className={style.jackpotName}
             src={require("../../assets/images/diamond-title.png")}
             alt="jackpotName"
-            initial={{ scale: 1 }}
-            animate={{ scale: [1.2, 1.5, 1] }}
+            initial={{ scale: 1.1 }}
+            animate={{ scale: [2, 1.7, 2, 1.5] }}
             transition={{
               repeatType: "reverse",
-              duration: 1,
+              duration: 2,
               repeat: 2,
             }}
           />

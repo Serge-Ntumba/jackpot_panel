@@ -13,6 +13,7 @@ const JackpotFullPanel = () => {
   return (
     <div className={style.container}>
       {/* <CoinAnimation /> */}
+
       <Diamond />
       {/* <Bronze /> */}
       {/* <Gold /> */}

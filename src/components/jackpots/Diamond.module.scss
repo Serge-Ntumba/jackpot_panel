@@ -99,16 +99,18 @@
         }
       }
       &Score {
-        margin-top: -18px;
+        // margin-top: -18px;
         position: relative;
         z-index: -30;
         @media screen and (max-width: $miniLarge) {
           margin-top: -10px;
         }
         &Img {
-          max-width: 630px;
+          // max-width: 630px;
+          max-width: 720px;
           width: 100%;
-          max-height: 120px;
+          // max-height: 120px;
+          max-height: 130px;
           height: auto;
           @media screen and (max-width: $miniLarge) {
             max-width: 530px;
@@ -127,8 +129,10 @@
 
         &Num {
           position: absolute;
-          top: 25px;
-          left: 29%;
+          top: 35px;
+          // top: 25px;
+          // left: 29%;
+          left: 31%;
           white-space: nowrap;
 
           font-size: 45px;

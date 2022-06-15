@@ -9320,6 +9320,20 @@ tsparticles-preset-confetti@^2.0.6:
     tsparticles-updater-tilt "^2.0.6"
     tsparticles-updater-wobble "^2.0.6"
 
+tsparticles-preset-fountain@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/tsparticles-preset-fountain/-/tsparticles-preset-fountain-2.0.6.tgz#03a44a1490be45455c5c43d0d1308596f831dcdd"
+  integrity sha512-EUcA3caVe9mPQF48Cbe+JmdDkvql39HuiGF2v/09+gFxGnwtDow0GNDtOZh85svqd8/Jv4imnoEPMyl00ARQ8Q==
+  dependencies:
+    tsparticles-engine "^2.0.6"
+    tsparticles-move-base "^2.0.6"
+    tsparticles-plugin-emitters "^2.0.6"
+    tsparticles-shape-circle "^2.0.6"
+    tsparticles-updater-color "^2.0.6"
+    tsparticles-updater-opacity "^2.0.6"
+    tsparticles-updater-out-modes "^2.0.6"
+    tsparticles-updater-size "^2.0.6"
+
 tsparticles-shape-circle@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/tsparticles-shape-circle/-/tsparticles-shape-circle-2.0.6.tgz#971dc19fdc36d0136389f36f0f911a2779eaca4b"

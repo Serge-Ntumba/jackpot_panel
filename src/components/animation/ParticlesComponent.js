@@ -1,69 +1,93 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles"; // loads tsparticles
 import { useCallback, useMemo } from "react";
+import { loadFountainPreset } from "tsparticles-preset-fountain";
 
 import particle1 from "../../assets/images/coin-1.png";
 import particle2 from "../../assets/images/coin-2.png";
 import particle3 from "../../assets/images/coin-3.png";
 import particle4 from "../../assets/images/coin-4.png";
-
 import particle5 from "../../assets/images/coin-5.png";
+
+import particle6 from "../../assets/images/coin-6.png";
+import particle7 from "../../assets/images/coin-7.png";
+import particle8 from "../../assets/images/coin-8.png";
+import particle9 from "../../assets/images/coin-9.png";
+import particle10 from "../../assets/images/coin-10.png";
+import particle11 from "../../assets/images/coin-11.png";
+import particle12 from "../../assets/images/coin-12.png";
+import particle13 from "../../assets/images/coin-13.png";
+
+import particle14 from "../../assets/images/coin-14.png";
+import particle15 from "../../assets/images/coin-15.png";
+import particle16 from "../../assets/images/coin-16.png";
+import particle17 from "../../assets/images/coin-17.png";
 
 const ParticlesComponent = (props) => {
   const options = useMemo(() => {
     return {
+      backgroundMode: {
+        enable: true,
+        color: "none",
+      },
       background: {
-        color: "transparent",
+        color: "none",
+        zIndex: -1,
       },
-      interactivity: {
-        detectsOn: "window",
-      },
-      emitters: {
-        position: {
-          x: 50,
-          y: 50,
-        },
-
-        life: {
-          duration: 0.9,
-          delay: 2,
-          count: 2, // how many times the animation should repeat
-        },
-        rate: {
-          quantity: 5,
-          delay: 0.1,
-        },
-      },
-
+      // fpsLimit: 60,
       particles: {
-        links: {
+        number: {
+          value: 0,
+        },
+        bounce: {
+          vertical: {
+            value: 0,
+          },
+        },
+        color: {
+          value: "#5bc0eb",
+        },
+        collisions: {
           enable: false,
-          distance: 200,
+        },
+        life: {
+          duration: {
+            sync: true,
+            value: 10,
+          },
+          count: 1,
+        },
+        opacity: {
+          value: 0.9,
+        },
+        size: {
+          value: 60,
+          random: {
+            enable: true,
+            minimumValue: 1,
+          },
         },
         move: {
           enable: true,
-          decay: {
-            min: 0.05,
-            max: 0.15,
-          },
           gravity: {
-            acceleration: 120.81,
             enable: true,
-            maxSpeed: 200,
           },
+          angle: {
+            value: 60,
+          },
+          speed: 10,
           outModes: {
+            // bottom: "bounce",
             top: "none",
             default: "destroy",
           },
-          speed: { min: 60, max: 200 },
-          direction: "top",
+          // trail: {
+          //   enable: true,
+          //   fillColor: "#000000",
+          //   length: 10,
+          // },
         },
-        opacity: {
-          value: { min: 0.5, max: 1 },
-        },
-        size: {
-          value: { min: 10, max: 50 },
-        },
+
         shape: {
           type: ["image"],
           image: [
@@ -83,17 +107,51 @@ const ParticlesComponent = (props) => {
             {
               src: particle5,
             },
-            // {
-            //   src: particle6,
-            // },
+
+            {
+              src: particle6,
+            },
             // {
             //   src: particle7,
             // },
             // {
             //   src: particle8,
             // },
+            // {
+            //   src: particle9,
+            // },
+
+            // {
+            //   src: particle10,
+            // },
+
+            // {
+            //   src: particle11,
+            // },
+            // {
+            //   src: particle12,
+            // },
+
+            {
+              src: particle13,
+            },
+            {
+              src: particle14,
+            },
+            {
+              src: particle15,
+            },
+
+            {
+              src: particle16,
+            },
+
+            {
+              src: particle17,
+            },
           ],
         },
+
         roll: {
           darken: {
             enable: true,
@@ -103,46 +161,6 @@ const ParticlesComponent = (props) => {
           speed: {
             min: 0.5,
             max: 0.17,
-          },
-        },
-        wobble: {
-          distance: 30,
-          enable: true,
-          speed: {
-            min: -7,
-            max: 7,
-          },
-        },
-        emitters: {
-          position: {
-            x: 50,
-            y: 100,
-          },
-          size: {
-            width: 0,
-            height: 0,
-          },
-          life: {
-            duration: 0.9,
-            delay: 2,
-            count: 0,
-          },
-          rate: {
-            quantity: 1,
-            delay: 0.1,
-          },
-        },
-        tilt: {
-          direction: "random",
-          enable: true,
-          move: true,
-          value: {
-            min: 0,
-            max: 360,
-          },
-          animation: {
-            enable: true,
-            speed: 60,
           },
         },
         rotate: {
@@ -157,8 +175,34 @@ const ParticlesComponent = (props) => {
             speed: 60,
           },
         },
-        number: {
-          //   value: 1000,
+      },
+      interactivity: {
+        detectsOn: "canvas",
+        // detectsOn: "window",
+        events: {
+          resize: true,
+        },
+      },
+      detectRetina: true,
+
+      emitters: {
+        direction: "top",
+        life: {
+          count: 0,
+          duration: 0,
+          delay: 0,
+        },
+        position: {
+          x: 50,
+          y: 35,
+        },
+        rate: {
+          delay: 0.1,
+          quantity: 1,
+        },
+        size: {
+          width: 20,
+          height: 0,
         },
       },
     };
@@ -166,6 +210,7 @@ const ParticlesComponent = (props) => {
 
   const particlesInit = useCallback((engine) => {
     loadFull(engine);
+    // loadFountainPreset(engine);
   }, []);
   return <Particles id={props.id} init={particlesInit} options={options} />;
 };
