@@ -34,7 +34,9 @@ const ParticlesComponent = (props) => {
         color: "none",
         zIndex: -1,
       },
-      // fpsLimit: 60,
+
+      fpsLimit: 60,
+
       particles: {
         number: {
           value: 0,
@@ -55,6 +57,7 @@ const ParticlesComponent = (props) => {
             sync: true,
             value: 10,
           },
+
           count: 1,
         },
         opacity: {
@@ -188,9 +191,9 @@ const ParticlesComponent = (props) => {
       emitters: {
         direction: "top",
         life: {
-          count: 0,
-          duration: 0,
-          delay: 0,
+          count: 1,
+          duration: 5,
+          // delay: 0.5,
         },
         position: {
           x: 50,
@@ -198,7 +201,7 @@ const ParticlesComponent = (props) => {
         },
         rate: {
           delay: 0.1,
-          quantity: 1,
+          quantity: 3,
         },
         size: {
           width: 20,

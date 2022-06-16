@@ -9,12 +9,12 @@ import style from "./JackpotFullPanel.module.scss";
 // import Platinum from "./Platinum";
 // import Silver from "./Silver";
 
-const JackpotFullPanel = () => {
+const JackpotFullPanel = ({ accumulated }) => {
   return (
     <div className={style.container}>
       {/* <CoinAnimation /> */}
 
-      <Diamond />
+      <Diamond accumulated={accumulated} />
       {/* <Bronze /> */}
       {/* <Gold /> */}
       {/* <Platinum /> */}
