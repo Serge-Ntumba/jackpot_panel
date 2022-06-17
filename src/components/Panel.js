@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadBubbleShape } from "tsparticles-shape-bubble";
-import { loadFull } from "tsparticles";
+
 import Diamond from "./jackpots/Diamond";
 import Gold from "./jackpots/Gold";
 import Platinum from "./jackpots/Platinum";
@@ -12,10 +10,6 @@ import style from "./Panel.module.scss";
 
 import JackpotFullPanel from "./jackpots/JackpotFullPanel";
 import Timer from "./animation/Timer";
-import {
-  MouseParallaxContainer,
-  MouseParallaxChild,
-} from "react-parallax-mouse";
 
 const Panel = () => {
   const [accumulated, setAccumulated] = useState(false);
@@ -25,14 +19,6 @@ const Panel = () => {
     counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
   }, [counter]);
 
-  const options = useMemo(() => {
-    return {};
-  }, []);
-  const particlesInit = useCallback((engine) => {
-    // loadFull(engine);
-    loadBubbleShape(engine);
-    // loadFountainPreset(engine);
-  }, []);
   return (
     <>
       {/* <Timer counter={counter} /> */}
@@ -46,11 +32,6 @@ const Panel = () => {
           )
         ) : (
           <>
-            <Particles
-              id="tsparticles"
-              init={particlesInit}
-              options={options}
-            />
             <div className={style.panelCherry}>
               <img src={require("./../assets/images/cherry.png")} alt="" />{" "}
             </div>

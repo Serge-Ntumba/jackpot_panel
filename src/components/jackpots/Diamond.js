@@ -4,6 +4,8 @@ import style from "./Diamond.module.scss";
 
 const Diamond = ({ accumulated }) => {
   const accumulateNum = "393 034 982.12";
+  const widthNums = 43;
+  const heightNums = 70;
   return (
     <div className={style.diamond}>
       <div className={style.container}>
@@ -70,6 +72,7 @@ const Diamond = ({ accumulated }) => {
             <img
               className={style.jackpotName}
               src={require("../../assets/images/diamond-title.png")}
+              // src={require("../../assets/images/diamond-title-big.png")}
               alt="jackpotName"
             />
           )}
@@ -84,7 +87,8 @@ const Diamond = ({ accumulated }) => {
             ) : (
               <img
                 className={style.jackpotScoreImg}
-                src={require("../../assets/images/score-bg-diamond.png")}
+                // src={require("../../assets/images/score-bg-diamond.png")}
+                src={require("../../assets/images/score-bg-diamond-big.png")}
                 alt="jackpotScore"
               />
             )}
@@ -105,7 +109,137 @@ const Diamond = ({ accumulated }) => {
                 {accumulateNum}
               </motion.div>
             ) : (
-              <div className={style.jackpotScoreNum}>{accumulateNum}</div>
+              <div className={style.jackpotScoreNum}>
+                <img
+                  src={require("../../assets/images/1s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/2s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/0.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                &nbsp;
+                <img
+                  src={require("../../assets/images/3s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/8s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/4s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                &nbsp;
+                <img
+                  src={require("../../assets/images/5s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/6s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/7s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                &nbsp;
+                <img
+                  src={require("../../assets/images/8s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/9.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                {/* <img
+                  src={require("../../assets/images/0-s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/1s-s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/2s-s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/3s-s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/4s-s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/5s-s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/6s-s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/7s-s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/8s-s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                />
+                <img
+                  src={require("../../assets/images/9s-s.png")}
+                  height={heightNums}
+                  width={widthNums}
+                  alt=""
+                /> */}
+              </div>
             )}
           </div>
         </div>
