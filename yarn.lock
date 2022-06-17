@@ -7099,6 +7099,11 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+pathseg@^1.2.0:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/pathseg/-/pathseg-1.2.1.tgz#50b3fc4fc05c64f4a52f8c04156f6f3975b0df3c"
+  integrity sha512-LtvemzPvcGamWBbNWJaIrgfUzpynXfwYrP6SSFVRhNHVcCaq6SVm4kRGJNuIV8qzBKgCN3fEXFZZ16YETFIXoA==
+
 performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
@@ -7760,7 +7765,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.8.1:
+prop-types@^15.5.8, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -7819,7 +7824,7 @@ quick-lru@^5.1.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
-raf@^3.4.1:
+raf@^3.1.0, raf@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/raf/-/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
   integrity sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==
@@ -7917,6 +7922,22 @@ react-is@^18.0.0:
   version "18.1.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.1.0.tgz#61aaed3096d30eacf2a2127118b5b41387d32a67"
   integrity sha512-Fl7FuabXsJnV5Q1qIOQwx/sagGF18kogb4gpfcG4gjLBWO0WDiiz1ko/ExayuxE7InyQkBLkxRFG5oxY6Uu3Kg==
+
+react-motion-prefixed@^0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/react-motion-prefixed/-/react-motion-prefixed-0.6.4.tgz#730ab16b4b7ea912ef826308118cb13f9580f60b"
+  integrity sha512-MaHD6E9cweWROYYLvpfx1T+nvNvIzkjZkOa8GgM0dMOFxA499+vijQ1SdBsYk/tCuVYqIDiyKVHqKRq1Qfj2sg==
+  dependencies:
+    performance-now "^2.1.0"
+    prop-types "^15.5.8"
+    raf "^3.1.0"
+
+react-parallax-mouse@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/react-parallax-mouse/-/react-parallax-mouse-1.7.3.tgz#1f711161d5758f251ea75ffeedd6fe1f17cabe7c"
+  integrity sha512-TthnGFaJ0xRR4RNeUpkaWp4N/6qejKnAlMM7H3nvYO9haW4IUEf2RHGPldhghPl5QWelsc4CG+FSaN3xuTt7dw==
+  dependencies:
+    react-motion-prefixed "^0.6.4"
 
 react-refresh@^0.11.0:
   version "0.11.0"
@@ -9162,6 +9183,13 @@ tslib@^2.0.3, tslib@^2.1.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
   integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
 
+tsparticles-core@^2.0.0-alpha.0:
+  version "2.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/tsparticles-core/-/tsparticles-core-2.0.0-alpha.0.tgz#ca011e916a4518cd7ed62ff6c2831e54ad088213"
+  integrity sha512-LfQwuoD8v+Xpu03hm+WTkJJgojeyyyyi5PIC+m+HJD8P3lJetxCt5Zbh4j9BXoYe0G7XNYuRL/Ac/vDoojcO4w==
+  optionalDependencies:
+    pathseg "^1.2.0"
+
 tsparticles-engine@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/tsparticles-engine/-/tsparticles-engine-2.0.6.tgz#27e85d8d014a2d9435ffc9a2c7efd570baf6dc64"
@@ -9258,6 +9286,13 @@ tsparticles-interaction-particles-links@^2.0.6:
   dependencies:
     tsparticles-engine "^2.0.6"
 
+tsparticles-interaction-particles-parallax@^2.0.0-alpha.3:
+  version "2.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/tsparticles-interaction-particles-parallax/-/tsparticles-interaction-particles-parallax-2.0.0-alpha.3.tgz#01d1ebd01fd241a5636db19d3d7301a2b05e7b10"
+  integrity sha512-dcaUicEdSzmD5/u3lkjCuFH4GZKv/RCL20ul7TqpghRZOjPrXW7WKLQBDNjKWm0sr6ERyUM2iyp5bbT2sFge2Q==
+  dependencies:
+    tsparticles-core "^2.0.0-alpha.0"
+
 tsparticles-move-base@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/tsparticles-move-base/-/tsparticles-move-base-2.0.6.tgz#b044a9920177fa48521a9cf355c81a927b0f930b"
@@ -9333,6 +9368,13 @@ tsparticles-preset-fountain@^2.0.6:
     tsparticles-updater-opacity "^2.0.6"
     tsparticles-updater-out-modes "^2.0.6"
     tsparticles-updater-size "^2.0.6"
+
+tsparticles-shape-bubble@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/tsparticles-shape-bubble/-/tsparticles-shape-bubble-2.0.6.tgz#2ce6a140add67aa3652ba456bf7df025941fc090"
+  integrity sha512-pDDboRu3sEcEH/55tdWGCvfmemrQ0V7HJZ3EIL9wRWfzoE5TeQ1agIl48ihv6ib+V6KxeUukbIgt+gaGyu1RgA==
+  dependencies:
+    tsparticles-engine "^2.0.6"
 
 tsparticles-shape-circle@^2.0.6:
   version "2.0.6"

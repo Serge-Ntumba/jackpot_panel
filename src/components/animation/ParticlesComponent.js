@@ -192,7 +192,7 @@ const ParticlesComponent = (props) => {
         direction: "top",
         life: {
           count: 1,
-          duration: 5,
+          duration: 7,
           // delay: 0.5,
         },
         position: {
