@@ -43,11 +43,11 @@ const Diamond = ({ accumulated }) => {
               //   src={require("../../assets/images/bg-diamond.png")}
               src={require("../../assets/images/light-diamond.png")}
               alt="light"
-              initial={{ scale: 1.3 }}
-              animate={{ scale: 1.6 }}
+              initial={{ scale: 1 }}
+              animate={{ scale: 1.4 }}
               transition={{
                 repeatType: "reverse",
-                duration: 2,
+                duration: 1.5,
                 repeat: Infinity,
               }}
             />

@@ -5,6 +5,7 @@
   height: 100vh;
   width: 100%;
   position: relative;
+  overflow: hidden;
   @include background($bgPath);
   // @media screen and (min-width: $medium) {
   //   @include background($bgPath);
@@ -24,21 +25,21 @@
   &Cup {
     // background-color: aliceblue;
     position: absolute;
-    left: 46%;
-    top: 25px;
+    left: 43%;
+    top: 30px;
   }
   &Di {
     // background-color: aliceblue;
     position: absolute;
-    left: 40px;
-    top: 85px;
+    left: 20px;
+    top: 55px;
   }
 
   &BulChoco {
     // background-color: aliceblue;
     position: absolute;
-    top: 250px;
-    // right: 0px;
+    top: 220px;
+    left: -10px;
     img {
       width: 100px;
       // transform: rotate(180deg);
@@ -58,24 +59,26 @@
   &Cup2 {
     // background-color: aliceblue;
     position: absolute;
-    top: 300px;
-    left: 170px;
+    top: 280px;
+    left: 70px;
   }
   &DiamondPart {
     position: absolute;
     top: 360px;
-    left: 350px;
+    left: 200px;
+    z-index: 20;
   }
   &Di2 {
     // background-color: aliceblue;
     position: absolute;
     top: 430px;
-    left: 90px;
+    left: 50px;
   }
   &Bel {
     // background-color: aliceblue;
     position: absolute;
-    top: 490px;
+    top: 550px;
+    left: -40px;
   }
   &Rond1 {
     position: absolute;
@@ -91,37 +94,38 @@
   }
   &Rond4 {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 10px;
     // right: 50px;
   }
 
   &Rond5 {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 350px;
   }
 
   &Rond3 {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     right: 50px;
   }
   &Triangle {
     position: absolute;
     top: 450px;
-    left: 430px;
+    left: 230px;
+    z-index: 99999999;
   }
   &Triangle2 {
     position: absolute;
-    top: 360px;
-    left: 450px;
+    top: 320px;
+    left: 290px;
     transform: rotate(90deg);
-    // z-index: 99999999;
+    z-index: 99999999;
   }
   &Flower {
     position: absolute;
-    right: 230px;
+    right: 200px;
     top: 40%;
     // z-index: 99999999;
     // left: 900px;
