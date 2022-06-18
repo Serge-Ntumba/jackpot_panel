@@ -65,7 +65,7 @@ const Bronze = () => {
                 alt=""
               />
               <img
-                src={require("../../assets/images/0.png")}
+                src={require("../../assets/images/0s.png")}
                 height={heightNums}
                 width={widthNums}
                 alt=""
@@ -116,7 +116,7 @@ const Bronze = () => {
                 alt=""
               />
               <img
-                src={require("../../assets/images/9.png")}
+                src={require("../../assets/images/9s.png")}
                 height={heightNums}
                 width={widthNums}
                 alt=""

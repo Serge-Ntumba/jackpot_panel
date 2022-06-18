@@ -128,7 +128,7 @@
           max-width: 300px;
         }
         &Acc {
-          width: 950px;
+          width: 900px;
           // width: 100%;
           // height: auto;
           // background-color: aqua;
@@ -139,7 +139,7 @@
       }
       &Score {
         // background-color: aqua;
-        margin-top: -30px;
+        margin-top: -5px;
         position: relative;
         z-index: -30;
         @media screen and (max-width: $miniLarge) {
@@ -167,11 +167,8 @@
           // }
           &Acc {
             // width: 100%;
-            width: 1200px;
-            max-height: 220px;
-            @media screen and (max-width: $medium) {
-              width: 900px;
-            }
+            width: 1300px;
+            // max-height: 220px;
           }
         }
 
@@ -256,9 +253,9 @@
 
           &Acc {
             position: absolute;
-            top: 35px;
+            top: 60px;
             // top: 25px;
-            left: 26%;
+            left: 25%;
 
             white-space: nowrap;
 
@@ -267,6 +264,7 @@
             text-transform: uppercase;
             line-height: 1.424;
             text-align: center;
+
             text-shadow: 0px 0px 8.9px rgba(255, 0, 150, 0.73);
             -moz-transform: matrix(
               1.67499767616055,
