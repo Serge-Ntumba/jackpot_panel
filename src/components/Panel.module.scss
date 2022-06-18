@@ -117,11 +117,13 @@
     top: 360px;
     left: 450px;
     transform: rotate(90deg);
+    z-index: 99999999;
   }
   &Flower {
     position: absolute;
-    right: 400px;
-    top: 45%;
+    right: 230px;
+    top: 40%;
+    // z-index: 99999999;
     // left: 900px;
   }
 
