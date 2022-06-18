@@ -8,7 +8,7 @@
     position: relative;
     .backgrounds {
       .bgImg {
-        max-width: 350px;
+        max-width: 300px;
         width: 100%;
         height: auto;
         @media screen and (max-width: $medium) {
@@ -65,24 +65,43 @@
           margin-top: -10px;
         }
         &Img {
-          max-height: 100px;
-          height: auto;
-          @media screen and (max-width: $miniLarge) {
-            max-width: 430px;
-          }
-          @media screen and (max-width: $small) {
-            max-width: 370px;
-          }
-          @media screen and (max-width: $smaller) {
-            max-width: 300px;
-          }
+          // max-height: 100px;
+          // height: auto;
+          // @media screen and (max-width: $miniLarge) {
+          //   max-width: 430px;
+          // }
+          // @media screen and (max-width: $small) {
+          //   max-width: 370px;
+          // }
+          // @media screen and (max-width: $smaller) {
+          //   max-width: 300px;
+          // }
         }
 
         &Num {
-          @include text();
+          // @include text();
           // text-align: center;
-          text-shadow: 0px 0px 5.81px rgba(6, 255, 0, 0.47);
+          position: absolute;
+          top: 15px;
+          left: -40px;
+          right: -40px;
+          padding-top: 10px;
+          padding-right: 0px;
+          background: rgb(15, 94, 19);
+          background: radial-gradient(
+            circle,
+            rgba(15, 94, 19, 1) 0%,
+            rgba(11, 219, 36, 1) 50%,
+            rgba(6, 70, 35, 1) 100%
+          );
+          border-radius: 50px;
+          animation: gradient 8s ease infinite;
+          background-size: 400% 400%;
+          -webkit-box-shadow: inset 0px 0px 4px 3px #163211;
+          box-shadow: inset 0px 0px 4px 3px #163211;
+          text-shadow: 0px 0px 5.81px rgba(22, 151, 20, 0.47);
           -moz-transform: matrix(0.79143640198586, 0, 0, 0.7914363959956, 0, 0);
+
           -webkit-transform: matrix(
             0.79143640198586,
             0,
@@ -109,5 +128,23 @@
         }
       }
     }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  75% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

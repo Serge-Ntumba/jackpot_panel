@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import style from "./Gold.module.scss";
 
 const Gold = () => {
+  const widthNums = 51;
+  const heightNums = 75;
   return (
     <div className={style.gold}>
       <div className={style.container}>
@@ -42,7 +44,77 @@ const Gold = () => {
               src={require("../../assets/images/score-bg-gold.png")}
               alt="diamondImg"
             />
-            <div className={style.jackpotScoreNum}>333 756 982.12</div>
+            <div className={style.jackpotScoreNum}>
+              <img
+                src={require("../../assets/images/1s.png")}
+                height={heightNums}
+                width={widthNums}
+                alt=""
+              />
+              <img
+                src={require("../../assets/images/2s.png")}
+                height={heightNums}
+                width={widthNums}
+                alt=""
+              />
+              <img
+                src={require("../../assets/images/0.png")}
+                height={heightNums}
+                width={widthNums}
+                alt=""
+              />
+              &nbsp;
+              <img
+                src={require("../../assets/images/3s.png")}
+                height={heightNums}
+                width={widthNums}
+                alt=""
+              />
+              <img
+                src={require("../../assets/images/8s.png")}
+                height={heightNums}
+                width={widthNums}
+                alt=""
+              />
+              <img
+                src={require("../../assets/images/4s.png")}
+                height={heightNums}
+                width={widthNums}
+                alt=""
+              />
+              &nbsp;
+              <img
+                src={require("../../assets/images/5s.png")}
+                height={heightNums}
+                width={widthNums}
+                alt=""
+              />
+              <img
+                src={require("../../assets/images/6s.png")}
+                height={heightNums}
+                width={widthNums}
+                alt=""
+              />
+              <img
+                src={require("../../assets/images/7s.png")}
+                height={heightNums}
+                width={widthNums}
+                alt=""
+              />
+              &nbsp;
+              <img
+                src={require("../../assets/images/8s.png")}
+                height={heightNums}
+                width={widthNums}
+                alt=""
+              />
+              <img
+                src={require("../../assets/images/9.png")}
+                height={heightNums}
+                width={widthNums}
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>

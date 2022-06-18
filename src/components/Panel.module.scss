@@ -117,7 +117,7 @@
     top: 360px;
     left: 450px;
     transform: rotate(90deg);
-    z-index: 99999999;
+    // z-index: 99999999;
   }
   &Flower {
     position: absolute;
@@ -130,7 +130,7 @@
   &Top {
     display: flex;
     width: 100%;
-    gap: 8%;
+    // gap: 8%;
     justify-content: space-around;
     padding-top: 20px;
     // @media screen and (max-width: $large) {
@@ -171,7 +171,7 @@
     // }
   }
   &Bottom {
-    margin-top: -130px;
+    margin-top: -70px;
     display: flex;
     justify-content: space-around;
     // @media screen and (max-width: $large) {
@@ -184,6 +184,7 @@
     // }
 
     &Silver {
+      margin-left: 50px;
       // @include background($lightPath);
 
       // @media screen and (max-width: $large) {
@@ -197,7 +198,7 @@
       // }
     }
     &Iron {
-      margin-top: 120px;
+      margin-top: 100px;
       padding-bottom: 0px;
       align-self: flex-end;
       // @media screen and (max-width: $medium) {
@@ -211,6 +212,7 @@
       // }
     }
     &Bronze {
+      margin-right: 50px;
       // @include background($lightPath);
 
       // @media screen and (max-width: $medium) {

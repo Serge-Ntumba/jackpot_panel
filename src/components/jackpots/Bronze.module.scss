@@ -10,7 +10,7 @@
 
     .backgrounds {
       .bgImg {
-        max-width: 350px;
+        max-width: 300px;
         width: 100%;
         height: auto;
         @media screen and (max-width: $medium) {
@@ -77,23 +77,41 @@
           margin-top: -10px;
         }
         &Img {
-          max-height: 100px;
-          height: auto;
-          @media screen and (max-width: $miniLarge) {
-            max-width: 430px;
-          }
-          @media screen and (max-width: $small) {
-            max-width: 370px;
-          }
-          @media screen and (max-width: $smaller) {
-            max-width: 300px;
-          }
+          // max-height: 100px;
+          // height: auto;
+          // @media screen and (max-width: $miniLarge) {
+          //   max-width: 430px;
+          // }
+          // @media screen and (max-width: $small) {
+          //   max-width: 370px;
+          // }
+          // @media screen and (max-width: $smaller) {
+          //   max-width: 300px;
+          // }
         }
 
         &Num {
-          @include text();
+          // @include text();
+          position: absolute;
+          top: 15px;
+          left: -40px;
+          right: -40px;
+          padding-top: 10px;
+          padding-right: 30px;
+          background: rgb(11, 65, 91);
+          background: radial-gradient(
+            circle,
+            rgba(11, 65, 91, 1) 0%,
+            rgba(11, 119, 167, 1) 50%,
+            rgba(3, 56, 83, 1) 100%
+          );
 
+          border-radius: 50px;
+          animation: gradient 8s ease infinite;
+          background-size: 400% 400%;
           text-shadow: 0px 0px 5.81px rgba(0, 255, 252, 0.47);
+          -webkit-box-shadow: inset 0px 0px 4px 3px #067788;
+          box-shadow: inset 0px 0px 4px 3px #067788;
           -moz-transform: matrix(0.79143640198586, 0, 0, 0.7914363959956, 0, 0);
           -webkit-transform: matrix(
             0.79143640198586,
@@ -121,5 +139,23 @@
         }
       }
     }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  75% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
