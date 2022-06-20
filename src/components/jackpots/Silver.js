@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import style from "./Silver.module.scss";
 const Silver = ({ accumulated }) => {
-  // const widthNums = 51;
-  // const heightNums = 75;
 
   const widthNums = accumulated ? 85 : 51;
   const heightNums = accumulated ? 105 : 75;

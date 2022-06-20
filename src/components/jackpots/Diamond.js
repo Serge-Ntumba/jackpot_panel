@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import style from "./Diamond.module.scss";
 
 const Diamond = ({ accumulated }) => {
-  const accumulateNum = "393 034 982.12";
   const widthNums = accumulated ? 53 : 43;
   const heightNums = accumulated ? 80 : 70;
   return (
@@ -26,7 +25,6 @@ const Diamond = ({ accumulated }) => {
           {accumulated ? (
             <motion.img
               className={style.lightAcc}
-              //   src={require("../../assets/images/bg-diamond.png")}
               src={require("../../assets/images/light-diamond.png")}
               alt="light"
               initial={{ scale: 1.3 }}
@@ -40,7 +38,6 @@ const Diamond = ({ accumulated }) => {
           ) : (
             <motion.img
               className={style.light}
-              //   src={require("../../assets/images/bg-diamond.png")}
               src={require("../../assets/images/light-diamond.png")}
               alt="light"
               initial={{ scale: 1 }}

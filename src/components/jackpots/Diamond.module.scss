@@ -1,30 +1,16 @@
 @import "../../sassStyles/variables";
 
 .diamond {
-  //   color: blue;
   text-align: center;
   .container {
     position: relative;
-    // .bgImg {
-    //   max-width: 700px;
-    //   width: 100%;
-    //   height: auto;
-
-    //   background-color: blue;
-    //   @media screen and (max-width: $medium) {
-    //     max-width: 500px;
-    //   }
-    // }
 
     .backgrounds {
-      // background-color: black;
       position: relative;
       .bgImg {
         max-width: 400px;
         width: 100%;
         height: auto;
-
-        //   background-color: blue;
         @media screen and (max-width: $medium) {
           max-width: 300px;
         }
@@ -33,7 +19,6 @@
         }
         &Acc {
           width: 650px;
-          // background-color: aqua;
         }
       }
       .light {
@@ -41,39 +26,6 @@
         position: absolute;
         left: 33%;
         top: -90px;
-
-        // left: -20%;
-        // background-color: aqua;
-        // max-width: 150%;
-        // width: 150%;
-        // height: auto;
-        @media screen and (max-width: $large) {
-          left: 24%;
-        }
-        @media screen and (max-width: $miniLarge) {
-          left: 15%;
-        }
-        @media screen and (max-width: $medium) {
-          top: -80px;
-          // max-width: 70%;
-          left: 20%;
-          max-width: 500px;
-        }
-        @media screen and (max-width: $small) {
-          // top: -80px;
-          // max-width: 70%;
-          left: 10%;
-        }
-        @media screen and (max-width: 555px) {
-          top: -30px;
-          // max-width: 100%;
-          // left: 0%;
-          max-width: 350px;
-        }
-        @media screen and (max-width: $smaller) {
-          // top: -50px;
-          left: 0%;
-        }
         &Acc {
           max-width: 800px;
           position: absolute;
@@ -92,55 +44,18 @@
       }
 
       &Acc {
-        // max-width: 850px;
-        // width: 100%;
-        // height: auto;
-        // margin-bottom: -20px;
-        // @media screen and (max-width: $medium) {
-        //   max-width: 550px;
-        // }
-        // @media screen and (max-width: $small) {
-        //   max-width: 400px;
-        // }
-        // @media screen and (max-width: 555px) {
-        //   max-width: 380px;
-        // }
-        // @media screen and (max-width: $smaller) {
-        //   max-width: 300px;
-        // }
       }
 
       &Name {
-        // max-width: 800px;
-        // width: 100%;
-        // height: auto;
         margin-bottom: -25px;
-        @media screen and (max-width: $medium) {
-          max-width: 550px;
-        }
-        @media screen and (max-width: $small) {
-          max-width: 400px;
-        }
-        @media screen and (max-width: 555px) {
-          max-width: 380px;
-        }
-        @media screen and (max-width: $smaller) {
-          max-width: 300px;
-        }
         &Acc {
           width: 900px;
-          @media screen and (max-width: $miniLarge) {
-            width: 700px;
-          }
         }
       }
       &Score {
         margin-top: -5px;
         position: relative;
         z-index: -30;
-        @media screen and (max-width: $miniLarge) {
-          margin-top: -10px;
-        }
         &Img {
           max-width: 1060px;
           &Acc {
