@@ -23,6 +23,198 @@ import particle15 from "../../assets/images/coin-15.png";
 import particle16 from "../../assets/images/coin-16.png";
 import particle17 from "../../assets/images/coin-17.png";
 
+// const ParticlesComponent = (props) => {
+//   const options = useMemo(() => {
+//     return {
+//       backgroundMode: {
+//         enable: true,
+//         color: "none",
+//       },
+//       background: {
+//         color: "none",
+//         zIndex: -1,
+//       },
+
+//       fpsLimit: 60,
+
+//       particles: {
+//         number: {
+//           value: 0,
+//         },
+//         bounce: {
+//           vertical: {
+//             value: 0,
+//           },
+//         },
+//         color: {
+//           value: "#5bc0eb",
+//         },
+//         collisions: {
+//           enable: false,
+//         },
+//         life: {
+//           duration: {
+//             sync: true,
+//             value: 10,
+//           },
+
+//           count: 1,
+//         },
+//         opacity: {
+//           value: 0.9,
+//         },
+//         size: {
+//           value: 60,
+//           random: {
+//             enable: true,
+//             minimumValue: 1,
+//           },
+//         },
+//         move: {
+//           enable: true,
+
+//           gravity: {
+//             enable: true,
+//           },
+//           angle: {
+//             value: 60,
+//           },
+//           speed: 11,
+//           outModes: {
+//             top: "none",
+//             default: "destroy",
+//           },
+//         },
+
+//         shape: {
+//           type: ["image"],
+//           image: [
+//             {
+//               src: particle1,
+//             },
+//             {
+//               src: particle2,
+//             },
+//             {
+//               src: particle3,
+//             },
+//             {
+//               src: particle4,
+//             },
+
+//             {
+//               src: particle5,
+//             },
+
+//             {
+//               src: particle6,
+//             },
+//             // {
+//             //   src: particle7,
+//             // },
+//             // {
+//             //   src: particle8,
+//             // },
+//             // {
+//             //   src: particle9,
+//             // },
+
+//             // {
+//             //   src: particle10,
+//             // },
+
+//             // {
+//             //   src: particle11,
+//             // },
+//             // {
+//             //   src: particle12,
+//             // },
+
+//             {
+//               src: particle13,
+//             },
+//             {
+//               src: particle14,
+//             },
+//             {
+//               src: particle15,
+//             },
+
+//             {
+//               src: particle16,
+//             },
+
+//             {
+//               src: particle17,
+//             },
+//           ],
+//         },
+
+//         roll: {
+//           darken: {
+//             enable: true,
+//             value: 25,
+//           },
+//           enable: true,
+//           speed: {
+//             min: 0.5,
+//             max: 0.17,
+//           },
+//         },
+//         rotate: {
+//           value: {
+//             min: 0,
+//             max: 560,
+//           },
+//           direction: "random",
+//           move: true,
+//           animation: {
+//             enable: true,
+//             speed: 60,
+//           },
+//         },
+//       },
+//       interactivity: {
+//         detectsOn: "canvas",
+//         // detectsOn: "window",
+//         events: {
+//           resize: true,
+//         },
+//       },
+//       detectRetina: true,
+
+//       emitters: {
+//         direction: "top",
+//         life: {
+//           count: 1,
+//           duration: 15,
+//           // delay: 0.5,
+//         },
+//         position: {
+//           x: 50,
+//           y: 35,
+//           // y: 45,
+//         },
+//         rate: {
+//           delay: 0.1,
+//           // delay: 10,
+//           quantity: 5,
+//         },
+//         size: {
+//           width: 20,
+//           height: 0,
+//         },
+//       },
+//     };
+//   }, []);
+
+//   const particlesInit = useCallback((engine) => {
+//     loadFull(engine);
+//     // loadFountainPreset(engine);
+//   }, []);
+//   return <Particles id={props.id} init={particlesInit} options={options} />;
+// };
+
 const ParticlesComponent = (props) => {
   const options = useMemo(() => {
     return {
@@ -192,7 +384,7 @@ const ParticlesComponent = (props) => {
         direction: "top",
         life: {
           count: 1,
-          duration: 7,
+          duration: 10,
           // delay: 0.5,
         },
         position: {
@@ -201,7 +393,7 @@ const ParticlesComponent = (props) => {
         },
         rate: {
           delay: 0.1,
-          quantity: 3,
+          quantity: 4,
         },
         size: {
           width: 20,

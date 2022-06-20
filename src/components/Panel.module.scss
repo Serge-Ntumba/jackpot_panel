@@ -8,57 +8,41 @@
   position: relative;
   overflow: hidden;
   @include background($bgPath);
-  // @media screen and (min-width: $medium) {
-  //   @include background($bgPath);
-  // }
-
-  // @media screen and (max-width: $medium) {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
   &Cherry {
-    // background-color: aliceblue;
     position: absolute;
     left: 35%;
     top: 5px;
   }
 
   &Cup {
-    // background-color: aliceblue;
     position: absolute;
     left: 43%;
     top: 30px;
   }
   &Di {
-    // background-color: aliceblue;
     position: absolute;
     left: 20px;
     top: 55px;
   }
 
   &BulChoco {
-    // background-color: aliceblue;
     position: absolute;
     top: 220px;
     left: -10px;
     img {
       width: 100px;
-      // transform: rotate(180deg);
     }
   }
 
   &Bul {
-    // background-color: aliceblue;
     position: absolute;
     top: 300px;
     right: 0px;
     img {
       width: 100px;
-      // transform: rotate(180deg);
     }
   }
   &Cup2 {
-    // background-color: aliceblue;
     position: absolute;
     top: 280px;
     left: 70px;
@@ -70,13 +54,11 @@
     z-index: 20;
   }
   &Di2 {
-    // background-color: aliceblue;
     position: absolute;
     top: 430px;
     left: 50px;
   }
   &Bel {
-    // background-color: aliceblue;
     position: absolute;
     top: 550px;
     left: -40px;
@@ -97,7 +79,6 @@
     position: absolute;
     bottom: 20px;
     left: 10px;
-    // right: 50px;
   }
 
   &Rond5 {
@@ -128,335 +109,38 @@
     position: absolute;
     right: 200px;
     top: 40%;
-    // z-index: 99999999;
-    // left: 900px;
   }
 
   &Top {
     display: flex;
     width: 100%;
-    // gap: 8%;
     justify-content: space-around;
     padding-top: 20px;
-    // @media screen and (max-width: $large) {
-    //   gap: 0%;
-    //   justify-content: space-evenly;
-    // }
-    // @media screen and (max-width: $medium) {
-    //   padding-top: 0px;
-    //   flex-direction: column;
-    //   order: 2;
-    // }
+
     &Gold {
       margin-left: -70px;
-
-      // @media screen and (max-width: $medium) {
-      //   @include background($bgPath);
-      //   margin-bottom: $margin-20;
-      //   margin-top: $margin-20;
-      //   margin-left: 0px;
-      // }
     }
     &Platinum {
-      // @media screen and (max-width: $medium) {
-      //   @include background($bgPath);
-      // }
     }
   }
   &Middle {
     margin-top: -140px;
-    // @media screen and (max-width: $large) {
-    //   margin-top: -250px;
-    // }
-    // @media screen and (max-width: $medium) {
-    //   margin-top: 0px;
-    //   order: 1;
-
-    //   @include background($bgPath);
-    // }
   }
   &Bottom {
     margin-top: -70px;
     display: flex;
     justify-content: space-around;
-    // @media screen and (max-width: $large) {
-    //   justify-content: space-evenly;
-    // }
-    // @media screen and (max-width: $medium) {
-    //   flex-direction: column;
-    //   order: 3;
-    //   margin-top: 0px;
-    // }
 
     &Silver {
       margin-left: 50px;
-      // @include background($lightPath);
-
-      // @media screen and (max-width: $large) {
-      // }
-      // @media screen and (max-width: $medium) {
-      //   order: 1;
-
-      //   @include background($bgPath);
-      //   margin-bottom: $margin-20;
-      //   margin-top: $margin-20;
-      // }
     }
     &Iron {
       margin-top: 100px;
       padding-bottom: 0px;
       align-self: flex-end;
-      // @media screen and (max-width: $medium) {
-      //   margin-top: 0px;
-      //   align-self: center;
-      //   order: 3;
-      //   width: 100%;
-      //   height: 100%;
-
-      //   @include background($bgPath);
-      // }
     }
     &Bronze {
       margin-right: 50px;
-      // @include background($lightPath);
-
-      // @media screen and (max-width: $medium) {
-      //   order: 2;
-
-      //   @include background($bgPath);
-      //   margin-bottom: $margin-20;
-      // }
-    }
-  }
-}
-
-// accumulated to remove latter
-
-.panelAcc {
-  height: 100vh;
-  width: 100%;
-
-  position: relative;
-  overflow: hidden;
-  // @include background($bgPath);
-  // @media screen and (min-width: $medium) {
-  //   @include background($bgPath);
-  // }
-
-  // @media screen and (max-width: $medium) {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-  &Cherry {
-    // background-color: aliceblue;
-    position: absolute;
-    left: 35%;
-    top: 5px;
-  }
-
-  &Cup {
-    // background-color: aliceblue;
-    position: absolute;
-    left: 43%;
-    top: 30px;
-  }
-  &Di {
-    // background-color: aliceblue;
-    position: absolute;
-    left: 20px;
-    top: 55px;
-  }
-
-  &BulChoco {
-    // background-color: aliceblue;
-    position: absolute;
-    top: 220px;
-    left: -10px;
-    img {
-      width: 100px;
-      // transform: rotate(180deg);
-    }
-  }
-
-  &Bul {
-    // background-color: aliceblue;
-    position: absolute;
-    top: 300px;
-    right: 0px;
-    img {
-      width: 100px;
-      // transform: rotate(180deg);
-    }
-  }
-  &Cup2 {
-    // background-color: aliceblue;
-    position: absolute;
-    top: 280px;
-    left: 70px;
-  }
-  &DiamondPart {
-    position: absolute;
-    top: 360px;
-    left: 200px;
-    z-index: 20;
-  }
-  &Di2 {
-    // background-color: aliceblue;
-    position: absolute;
-    top: 430px;
-    left: 50px;
-  }
-  &Bel {
-    // background-color: aliceblue;
-    position: absolute;
-    top: 550px;
-    left: -40px;
-  }
-  &Rond1 {
-    position: absolute;
-    top: 260px;
-    right: 130px;
-    // bottom: 0;
-  }
-  &Rond11 {
-    position: absolute;
-    top: 280px;
-    right: 300px;
-    // bottom: 0;
-  }
-  &Rond4 {
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-    // right: 50px;
-  }
-
-  &Rond5 {
-    position: absolute;
-    bottom: 20px;
-    left: 350px;
-  }
-
-  &Rond3 {
-    position: absolute;
-    bottom: 20px;
-    right: 50px;
-  }
-  &Triangle {
-    position: absolute;
-    top: 450px;
-    left: 230px;
-    z-index: 99999999;
-  }
-  &Triangle2 {
-    position: absolute;
-    top: 320px;
-    left: 290px;
-    transform: rotate(90deg);
-    z-index: 99999999;
-  }
-  &Flower {
-    position: absolute;
-    right: 200px;
-    top: 40%;
-    // z-index: 99999999;
-    // left: 900px;
-  }
-
-  &Top {
-    display: flex;
-    width: 100%;
-    // gap: 8%;
-    justify-content: space-around;
-    padding-top: 20px;
-    // @media screen and (max-width: $large) {
-    //   gap: 0%;
-    //   justify-content: space-evenly;
-    // }
-    // @media screen and (max-width: $medium) {
-    //   padding-top: 0px;
-    //   flex-direction: column;
-    //   order: 2;
-    // }
-    &Gold {
-      margin-left: -70px;
-
-      // @media screen and (max-width: $medium) {
-      //   @include background($bgPath);
-      //   margin-bottom: $margin-20;
-      //   margin-top: $margin-20;
-      //   margin-left: 0px;
-      // }
-    }
-    &Platinum {
-      // @media screen and (max-width: $medium) {
-      //   @include background($bgPath);
-      // }
-    }
-  }
-  &Middle {
-    margin-top: -140px;
-    // @media screen and (max-width: $large) {
-    //   margin-top: -250px;
-    // }
-    // @media screen and (max-width: $medium) {
-    //   margin-top: 0px;
-    //   order: 1;
-
-    //   @include background($bgPath);
-    // }
-  }
-  &Bottom {
-    margin-top: -70px;
-    display: flex;
-    justify-content: space-around;
-    // @media screen and (max-width: $large) {
-    //   justify-content: space-evenly;
-    // }
-    // @media screen and (max-width: $medium) {
-    //   flex-direction: column;
-    //   order: 3;
-    //   margin-top: 0px;
-    // }
-
-    &Silver {
-      margin-left: 50px;
-      // @include background($lightPath);
-
-      // @media screen and (max-width: $large) {
-      // }
-      // @media screen and (max-width: $medium) {
-      //   order: 1;
-
-      //   @include background($bgPath);
-      //   margin-bottom: $margin-20;
-      //   margin-top: $margin-20;
-      // }
-    }
-    &Iron {
-      margin-top: 100px;
-      padding-bottom: 0px;
-      align-self: flex-end;
-      // @media screen and (max-width: $medium) {
-      //   margin-top: 0px;
-      //   align-self: center;
-      //   order: 3;
-      //   width: 100%;
-      //   height: 100%;
-
-      //   @include background($bgPath);
-      // }
-    }
-    &Bronze {
-      margin-right: 50px;
-      // @include background($lightPath);
-
-      // @media screen and (max-width: $medium) {
-      //   order: 2;
-
-      //   @include background($bgPath);
-      //   margin-bottom: $margin-20;
-      // }
     }
   }
 }

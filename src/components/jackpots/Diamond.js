@@ -65,29 +65,34 @@ const Diamond = ({ accumulated }) => {
               transition={{
                 repeatType: "reverse",
                 duration: 0.8,
-                repeat: 5,
+                repeat: 11,
               }}
             />
           ) : (
             <img
               className={style.jackpotName}
               src={require("../../assets/images/diamond-title.png")}
-              // src={require("../../assets/images/diamond-title-big.png")}
               alt="jackpotName"
             />
           )}
 
           <div className={style.jackpotScore}>
             {accumulated ? (
-              <img
+              <motion.img
                 className={style.jackpotScoreImgAcc}
                 src={require("../../assets/images/score-bg-diamond-big.png")}
                 alt="jackpotScore"
+                initial={{ scale: 1.05 }}
+                animate={{ scale: [1.09, 1] }}
+                transition={{
+                  repeatType: "reverse",
+                  duration: 0.4,
+                  repeat: 20,
+                }}
               />
             ) : (
               <img
                 className={style.jackpotScoreImg}
-                // src={require("../../assets/images/score-bg-diamond.png")}
                 src={require("../../assets/images/score-bg-diamond-big.png")}
                 alt="jackpotScore"
               />
@@ -97,6 +102,7 @@ const Diamond = ({ accumulated }) => {
                 accumulated ? style.jackpotScoreNumAcc : style.jackpotScoreNum
               }
             >
+              {/* images should be from the backend */}
               <img
                 src={require("../../assets/images/1s.png")}
                 height={heightNums}
@@ -167,95 +173,6 @@ const Diamond = ({ accumulated }) => {
                 alt=""
               />
             </div>
-            {/* {accumulated ? (
-              <motion.div
-                className={style.jackpotScoreNumAcc}
-                initial={{ opacity: 0.1 }}
-                animate={{
-                  opacity: 1,
-                }}
-                transition={{
-                  repeatType: "reverse",
-                  duration: 2,
-                  repeat: 2,
-                  opacity: { duration: 1, repeat: 2 },
-                }}
-              >
-                {accumulateNum}
-              </motion.div>
-            ) : (
-              <div className={style.jackpotScoreNum}>
-                <img
-                  src={require("../../assets/images/1s.png")}
-                  height={heightNums}
-                  width={widthNums}
-                  alt=""
-                />
-                <img
-                  src={require("../../assets/images/2s.png")}
-                  height={heightNums}
-                  width={widthNums}
-                  alt=""
-                />
-                <img
-                  src={require("../../assets/images/0.png")}
-                  height={heightNums}
-                  width={widthNums}
-                  alt=""
-                />
-                &nbsp;
-                <img
-                  src={require("../../assets/images/3s.png")}
-                  height={heightNums}
-                  width={widthNums}
-                  alt=""
-                />
-                <img
-                  src={require("../../assets/images/8s.png")}
-                  height={heightNums}
-                  width={widthNums}
-                  alt=""
-                />
-                <img
-                  src={require("../../assets/images/4s.png")}
-                  height={heightNums}
-                  width={widthNums}
-                  alt=""
-                />
-                &nbsp;
-                <img
-                  src={require("../../assets/images/5s.png")}
-                  height={heightNums}
-                  width={widthNums}
-                  alt=""
-                />
-                <img
-                  src={require("../../assets/images/6s.png")}
-                  height={heightNums}
-                  width={widthNums}
-                  alt=""
-                />
-                <img
-                  src={require("../../assets/images/7s.png")}
-                  height={heightNums}
-                  width={widthNums}
-                  alt=""
-                />
-                &nbsp;
-                <img
-                  src={require("../../assets/images/8s.png")}
-                  height={heightNums}
-                  width={widthNums}
-                  alt=""
-                />
-                <img
-                  src={require("../../assets/images/9.png")}
-                  height={heightNums}
-                  width={widthNums}
-                  alt=""
-                />
-              </div>
-            )} */}
           </div>
         </div>
       </div>

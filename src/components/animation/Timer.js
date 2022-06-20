@@ -27,14 +27,6 @@ const Timer = ({ counter }) => {
           transition={{ duration: 1, repeat: 5 }}
         />
       </div>
-
-      {/* <motion.div
-        className={style.timerCounter}
-        animate={{ scale: 1.9 }}
-        transition={{ duration: 1, repeat: 5 }}
-      >
-        {counter}
-      </motion.div> */}
     </div>
   );
 };

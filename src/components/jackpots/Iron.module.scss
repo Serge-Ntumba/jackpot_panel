@@ -4,47 +4,35 @@
   text-align: center;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  // @include background($lightPath);
   .container {
     position: relative;
-    // .bgImg {
-    //   max-width: 300px;
-    //   width: 100%;
-    //   height: auto;
-    //   @media screen and (max-width: $medium) {
-    //     max-width: 280px;
-    //   }
-    // }
     .backgrounds {
       .bgImg {
         max-width: 350px;
         width: 100%;
         height: auto;
-        @media screen and (max-width: $medium) {
-          max-width: 280px;
-        }
       }
       .light {
         position: absolute;
         top: -100px;
         left: -20%;
-        // background-color: aqua;
         max-width: 150%;
-        // width: 150%;
         height: auto;
-        @media screen and (max-width: $medium) {
-          top: -80px;
-          left: 25%;
-          max-width: 50%;
-        }
-        @media screen and (max-width: 555px) {
-          top: -100px;
-          max-width: 100%;
-          left: 0%;
-        }
-        @media screen and (max-width: $smaller) {
-          top: -50px;
-        }
+      }
+    }
+
+    .backgroundsAcc {
+      .bgImg {
+        max-width: 750px;
+        width: 100%;
+        height: auto;
+      }
+      .light {
+        position: absolute;
+        top: -150px;
+        left: 20%;
+        max-width: 100%;
+        height: auto;
       }
     }
     .jackpot {
@@ -55,36 +43,20 @@
       &Name {
         max-width: 300px;
         height: auto;
-        @media screen and (max-width: $miniLarge) {
-          max-width: 250px;
-        }
-
-        @media screen and (max-width: $medium) {
-          max-width: 200px;
+        &Acc {
+          width: 700px;
         }
       }
+
       &Score {
         margin-top: -18px;
         position: relative;
         z-index: -30;
-        @media screen and (max-width: $miniLarge) {
-          margin-top: -10px;
-        }
         &Img {
-          // max-height: 100px;
-          // height: auto;
-          // @media screen and (max-width: $miniLarge) {
-          //   max-width: 380px;
-          // }
-          // @media screen and (max-width: $medium) {
-          //   max-width: 380px;
-          // }
-          // @media screen and (max-width: $small) {
-          //   max-width: 330px;
-          // }
-          // @media screen and (max-width: $smaller) {
-          //   max-width: 280px;
-          // }
+        }
+
+        &ImgAcc {
+          width: 1000px;
         }
 
         &Num {
@@ -124,21 +96,46 @@
             0
           );
           -ms-transform: matrix(0.79143640198586, 0, 0, 0.7914363959956, 0, 0);
+        }
+        &NumAcc {
+          position: absolute;
+          top: 25px;
+          left: -80px;
+          right: -80px;
+          padding-top: 30px;
+          padding-right: 50px;
+          padding-left: 50px;
+          padding-bottom: 30px;
+          border-radius: 80px;
+          background: rgb(47, 49, 50);
+          background: radial-gradient(
+            circle,
+            rgba(47, 49, 50, 1) 0%,
+            rgba(88, 88, 77, 1) 50%,
+            rgba(49, 64, 93, 1) 100%
+          );
+          animation: gradient 8s ease infinite;
+          background-size: 400% 400%;
+          -webkit-box-shadow: inset 0px 0px 4px 3px rgb(33, 44, 47);
+          box-shadow: inset 0px 0px 4px 3px rgb(33, 44, 47);
+          white-space: nowrap;
 
-          @media screen and (max-width: $miniLarge) {
-            font-size: 65px;
-          }
-
-          @media screen and (max-width: $medium) {
-            top: 10px;
-          }
-
-          @media screen and (max-width: $small) {
-            font-size: 55px;
-          }
-          @media screen and (max-width: $smaller) {
-            font-size: 48px;
-          }
+          font-size: 78px;
+          color: rgb(255, 255, 255);
+          text-transform: uppercase;
+          line-height: 0.854;
+          // text-align: center;
+          text-shadow: 0px 0px 7.74px rgba(255, 228, 0, 0.47);
+          -moz-transform: matrix(0.79143640198586, 0, 0, 0.7914363959956, 0, 0);
+          -webkit-transform: matrix(
+            0.79143640198586,
+            0,
+            0,
+            0.7914363959956,
+            0,
+            0
+          );
+          -ms-transform: matrix(0.79143640198586, 0, 0, 0.7914363959956, 0, 0);
         }
       }
     }

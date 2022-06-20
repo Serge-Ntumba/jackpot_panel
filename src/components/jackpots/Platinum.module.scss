@@ -3,7 +3,6 @@
 
 .platinum {
   text-align: center;
-  // @include background($lightPath);
   @media screen and (max-width: $medium) {
   }
   .container {
@@ -13,37 +12,29 @@
         max-width: 350px;
         width: 100%;
         height: auto;
-        @media screen and (max-width: $medium) {
-          max-width: 280px;
-        }
       }
       .light {
         position: absolute;
         top: -60px;
         left: -30%;
-        // background-color: aqua;
         max-width: 150%;
-        // width: 150%;
         height: auto;
-        @media screen and (max-width: $medium) {
-          // top: -80px;
-          left: 25%;
-          max-width: 50%;
-        }
+      }
+    }
 
-        @media screen and (max-width: $small) {
-          top: -20px;
-        }
-        @media screen and (max-width: 555px) {
-          top: 10px;
-          // max-width: 80%;
-          // left: 10%;
-        }
-        @media screen and (max-width: $smaller) {
-          max-width: 80%;
-          left: 10%;
-          top: 0;
-        }
+    .backgroundsAcc {
+      .bgImg {
+        max-width: 750px;
+        width: 100%;
+        height: auto;
+      }
+      .light {
+        position: absolute;
+
+        top: -100px;
+        left: 20%;
+        max-width: 150%;
+        height: auto;
       }
     }
     .jackpot {
@@ -54,21 +45,11 @@
       &Name {
         max-width: 700px;
         height: auto;
-        @media screen and (max-width: $miniLarge) {
-          max-width: 650px;
-        }
-        @media screen and (max-width: $medium) {
-          max-width: 510px;
-        }
-        @media screen and (max-width: $small) {
-          max-width: 420px;
-        }
-        @media screen and (max-width: $smaller) {
-          max-width: 320px;
-        }
+      }
+      &NameAcc {
+        width: 1100px;
       }
       &Score {
-        // background-color: blue;
         margin-top: -18px;
         position: relative;
         z-index: -30;
@@ -76,16 +57,9 @@
           margin-top: -10px;
         }
         &Img {
-          // background-color: yellow;
-          // max-width: 530px;
-          // width: 100%;
-          // max-height: 100px;
-          // height: auto;
-          // @media screen and (max-width: $miniLarge) {
-          //   max-width: 430px;
-          // }
-          // @media screen and (max-width: $medium) {
-          // }
+        }
+        &ImgAcc {
+          width: 1000px;
         }
         &Num {
           background: rgb(110, 3, 39);
@@ -95,15 +69,14 @@
             rgba(220, 0, 67, 1) 50%,
             rgba(112, 16, 76, 1) 100%
           );
-          // margin-left: -4px;
           border-radius: 50px;
           padding-left: 35px;
           padding-top: 10px;
-          // padding-bottom: 5px;
-          padding-right: 25px;
+          padding-right: 35px;
           border-bottom: 2px solid #eb0895;
           position: absolute;
           top: 10px;
+          left: 8px;
 
           -webkit-box-shadow: inset 0px 0px 4px 3px rgba(0, 0, 0, 0.84);
           box-shadow: inset 0px 0px 4px 3px rgba(0, 0, 0, 0.84);
@@ -127,22 +100,50 @@
             0
           );
           -ms-transform: matrix(0.79143640198586, 0, 0, 0.7914363959956, 0, 0);
-          @media screen and (max-width: $miniLarge) {
-            font-size: 68px;
-            left: 13%;
-          }
-          @media screen and (max-width: $medium) {
-            left: 4%;
-          }
+        }
 
-          @media screen and (max-width: $small) {
-            font-size: 55px;
-          }
-          @media screen and (max-width: $smaller) {
-            font-size: 48px;
-            left: 0%;
-            top: 10px;
-          }
+        &NumAcc {
+          position: absolute;
+
+          top: 20px;
+          left: -15px;
+          right: -15px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-right: 15px;
+          padding-left: 15px;
+          border-radius: 80px;
+          background: rgb(110, 3, 39);
+          background: linear-gradient(
+            90deg,
+            rgba(110, 3, 39, 1) 0%,
+            rgba(220, 0, 67, 1) 50%,
+            rgba(112, 16, 76, 1) 100%
+          );
+
+          border-bottom: 2px solid #eb0895;
+
+          -webkit-box-shadow: inset 0px 0px 4px 3px rgba(0, 0, 0, 0.84);
+          box-shadow: inset 0px 0px 4px 3px rgba(0, 0, 0, 0.84);
+          white-space: nowrap;
+          background-size: 400% 400%;
+          animation: gradient 8s ease infinite;
+          font-size: 78px;
+          color: rgb(255, 255, 255);
+          text-transform: uppercase;
+          line-height: 0.854;
+          text-align: center;
+          text-shadow: 0px 0px 10.53px rgba(255, 228, 0, 0.47);
+          -moz-transform: matrix(0.79143640198586, 0, 0, 0.7914363959956, 0, 0);
+          -webkit-transform: matrix(
+            0.79143640198586,
+            0,
+            0,
+            0.7914363959956,
+            0,
+            0
+          );
+          -ms-transform: matrix(0.79143640198586, 0, 0, 0.7914363959956, 0, 0);
         }
       }
     }

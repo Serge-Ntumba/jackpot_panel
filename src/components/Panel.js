@@ -18,14 +18,10 @@ import Timer from "./animation/Timer";
 import Parts from "./Parts";
 
 const Panel = () => {
-  const [accumulated, setAccumulated] = useState(true);
+  const [accumulated, setAccumulated] = useState(false);
   const [counter, setCounter] = useState(5);
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
-  const [panel, setPanel] = useState({
-    panel: style.panel,
-    panelAcc: style.panelAcc,
-  });
 
   useEffect(() => {
     counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
@@ -45,9 +41,11 @@ const Panel = () => {
 
   return (
     <>
+      {/* <Parts accumulated={accumulated} x={x} y={y} />
+      <JackpotFullPanel accumulated={accumulated} /> */}
       {/* <Timer counter={counter} /> */}
 
-      <div className={panel.panel}>
+      <div className={style.panel}>
         {accumulated ? (
           counter === 0 ? (
             <>

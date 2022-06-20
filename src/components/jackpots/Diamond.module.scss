@@ -114,7 +114,7 @@
         // max-width: 800px;
         // width: 100%;
         // height: auto;
-        // margin-bottom: -20px;
+        margin-bottom: -25px;
         @media screen and (max-width: $medium) {
           max-width: 550px;
         }
@@ -129,16 +129,12 @@
         }
         &Acc {
           width: 900px;
-          // width: 100%;
-          // height: auto;
-          // background-color: aqua;
           @media screen and (max-width: $miniLarge) {
             width: 700px;
           }
         }
       }
       &Score {
-        // background-color: aqua;
         margin-top: -5px;
         position: relative;
         z-index: -30;
@@ -147,28 +143,8 @@
         }
         &Img {
           max-width: 1060px;
-          // max-width: 720px;
-          // width: 100%;
-          // max-height: 120px;
-          // max-height: 130px;
-          // height: auto;
-          // @media screen and (max-width: $miniLarge) {
-          //   max-width: 530px;
-          // }
-
-          // @media screen and (max-width: $medium) {
-          //   max-width: 430px;
-          // }
-          // @media screen and (max-width: $small) {
-          //   max-width: 390px;
-          // }
-          // @media screen and (max-width: $smaller) {
-          //   max-width: 320px;
-          // }
           &Acc {
-            // width: 100%;
             width: 1300px;
-            // max-height: 220px;
           }
         }
 
@@ -185,25 +161,15 @@
           padding-right: 55px;
           border-radius: 35px;
           padding-top: 5px;
-          // background-color: red;
           position: absolute;
-          // -webkit-backdrop-filter: blur(10px);
-          // backdrop-filter: blur(10px);
           top: 59px;
-          // top: 25px;
           left: 20%;
           margin-left: 23px;
-          // margin-top: -2px;
-
-          // left: 31%;
           white-space: nowrap;
           animation: gradient 8s ease infinite;
           -webkit-box-shadow: inset 0px 0px 4px 3px #160a60;
           box-shadow: inset 0px 0px 4px 3px #160a60;
-          // -webkit-box-shadow: inset 0px 0px 15px 5px #160a60;
-          // box-shadow: inset 0px 0px 15px 5px #160a60;
           background-size: 400% 400%;
-
           font-size: 45px;
           color: rgb(255, 255, 255);
           text-transform: uppercase;
@@ -227,29 +193,6 @@
             0
           );
           -ms-transform: matrix(1.67499767616055, 0, 0, 1.67499767616055, 0, 0);
-          @media screen and (max-width: $large) {
-            left: 26%;
-            // font-size: 40px;
-          }
-          @media screen and (max-width: $miniLarge) {
-            // left: 30%;
-            font-size: 38px;
-          }
-          @media screen and (max-width: $medium) {
-            font-size: 30px;
-            left: 37%;
-          }
-
-          @media screen and (max-width: $small) {
-            // font-size: 24px;
-            left: 33%;
-          }
-
-          @media screen and (max-width: $smaller) {
-            font-size: 22px;
-            left: 29%;
-            top: 17px;
-          }
 
           &Acc {
             position: absolute;
